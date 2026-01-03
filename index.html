@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="InterHealth - Plataforma SaaS de Interoperabilidade em Saúde. Dados no padrão FHIR para uma interoperabilidade que gera resultados.">
+	<meta name="keywords" content="FHIR, Interoperabilidade, Saúde Digital, MV, TASY, Hospital">
+	<title>InterHealth - Interoperabilidade em Saúde Digital</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="./public/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="./public/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./public/favicon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./public/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="./public/favicon/android-chrome-512x512.png">
+	<link rel="manifest" href="./public/favicon/site.webmanifest">
+
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Tailwind Config -->
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: {
+							50: '#F0F9FF',   // 50% - Luz (Alice Blue)
+							100: '#E0F2FE',
+							200: '#BAE6FD',
+							300: '#7DD3FC',
+							400: '#38BDF8',
+							500: '#0284C7',  // 30% - Parca (Sky Blue)
+							600: '#0369A1',
+							700: '#075985',
+							800: '#0C4A6E',  // 20% - Base (azul escuro)
+							900: '#082f49',
+						}
+					},
+					fontFamily: {
+						sans: ['Inter', 'system-ui', 'sans-serif'],
+					}
+				}
+			}
+		}
+	</script>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body class="font-sans antialiased">
+	<!-- Header -->
+	<div id="header-component"></div>
+
+	<!-- Main Content -->
+	<main>
+		<!-- Hero Section -->
+		<div id="hero-section"></div>
+
+		<!-- Problem Section -->
+		<div id="problem-section"></div>
+
+		<!-- Solution Section -->
+		<div id="solution-section"></div>
+
+		<!-- Features Section -->
+		<div id="features-section"></div>
+
+		<!-- Differentials Section -->
+		<div id="differentials-section"></div>
+
+		<!-- Benefits Section -->
+		<div id="benefits-section"></div>
+
+		<!-- CTA Section -->
+		<div id="cta-section"></div>
+
+		<!-- FAQ Section -->
+		<div id="faq-section"></div>
+
+		<!-- Contact Section -->
+		<div id="contact-section"></div>
+	</main>
+
+	<!-- Footer -->
+	<div id="footer-component"></div>
+
+	<!-- Scripts -->
+	<script src="./src/components/Header.js"></script>
+	<script src="./src/components/Footer.js"></script>
+	<script src="./src/pages/HeroSection.js"></script>
+	<script src="./src/pages/ProblemSolutionSection.js"></script>
+	<script src="./src/pages/FeaturesSection.js"></script>
+	<script src="./src/pages/DifferentialsSection.js"></script>
+	<script src="./src/pages/BenefitsSection.js"></script>
+	<script src="./src/pages/CTASection.js"></script>
+	<script src="./src/pages/FAQSection.js"></script>
+	<script src="./src/pages/ContactSection.js"></script>
+	<script src="./src/utils/app.js"></script>
+</body>
+
+</html>
