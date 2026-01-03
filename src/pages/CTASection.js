@@ -30,15 +30,15 @@ function CTASection() {
                         
                         <!-- CTAs -->
                         <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                            <button onclick="scrollToSection('contact')" class="bg-primary-500 hover:bg-primary-600 text-white px-7 py-3 text-base rounded-lg shadow-md transition-all hover:shadow-lg group font-medium">
+                            <a href="/form.html" class="bg-primary-500 hover:bg-primary-600 text-white px-7 py-3 text-base rounded-lg shadow-md transition-all hover:shadow-lg group font-medium inline-flex items-center">
                                 Inicie Sua Integração FHIR Agora
                                 <svg xmlns="http://www.w3.org/2000/svg" class="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
                                 </svg>
-                            </button>
+                            </a>
                             
-                            <button onclick="scrollToSection('contact')" class="border-2 border-primary-400 bg-white text-primary-700 hover:bg-primary-50 px-7 py-3 text-base rounded-lg transition-all hover:border-primary-500 group font-medium">
+                            <a href="/form.html" class="border-2 border-primary-400 bg-white text-primary-700 hover:bg-primary-50 px-7 py-3 text-base rounded-lg transition-all hover:border-primary-500 group font-medium inline-flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-2 w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M8 2v4"></path>
                                     <path d="M16 2v4"></path>
@@ -46,7 +46,7 @@ function CTASection() {
                                     <path d="M3 10h18"></path>
                                 </svg>
                                 Agende uma Demo
-                            </button>
+                            </a>
                         </div>
                         
                         <!-- Trust Indicators -->

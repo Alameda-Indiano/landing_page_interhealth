@@ -50,11 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		faqContainer.innerHTML = FAQSection();
 	}
 
-	const contactContainer = document.getElementById('contact-section');
-	if (contactContainer) {
-		contactContainer.innerHTML = ContactSection();
-	}
-
 	// Render Footer
 	const footerContainer = document.getElementById('footer-component');
 	if (footerContainer) {
@@ -239,10 +234,24 @@ window.handleFormSubmit = function (event) {
 	const formData = new FormData(form);
 	const data = Object.fromEntries(formData.entries());
 
-	// Show success message (you can replace with actual API call)
-	console.log('Form submitted:', data);
+	// Criar mensagem formatada para WhatsApp
+	let message = `Olá, vim através do site InterHealth!\n\n`;
+	message += `*Nome:* ${data.name}\n`;
+	message += `*Email:* ${data.email}\n`;
+	message += `*Telefone:* ${data.phone}\n`;
 
-	alert('Obrigado! Sua mensagem foi enviada com sucesso. Nossa equipe entrará em contato em breve.');
+	if (data.company) {
+		message += `*Instituição:* ${data.company}\n`;
+	}
+
+	message += `\n*Mensagem:*\n${data.message}`;
+
+	// Codificar a mensagem para URL
+	const encodedMessage = encodeURIComponent(message);
+
+	// Redirecionar para WhatsApp
+	const whatsappUrl = `https://api.whatsapp.com/send/?phone=5511964589929&text=${encodedMessage}`;
+	window.open(whatsappUrl, '_blank');
 
 	// Reset form
 	form.reset();

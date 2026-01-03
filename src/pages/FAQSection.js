@@ -40,7 +40,7 @@ function FAQSection() {
 	];
 
 	return `
-        <section id="faq" class="section-padding bg-white">
+        <section id="faq" class="section-padding bg-white  mb-20">
             <div class="container-custom">
                 <div class="mt-20 max-w-6xl mx-auto">
                     <!-- Section Header -->

@@ -23,7 +23,7 @@ function ContactSection() {
                     </h2>
                     
                     <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-                        Preencha o formulário e nossa equipe entrará em contato para entender suas necessidades
+                        Preencha o formulário e fale conosco diretamente pelo WhatsApp
                     </p>
                 </div>
                 
@@ -166,10 +166,9 @@ function ContactSection() {
                                 type="submit" 
                                 class="w-full bg-primary-500 hover:bg-primary-600 text-white px-7 py-3 text-base rounded-lg shadow-md transition-all hover:shadow-lg group flex items-center justify-center gap-2 font-medium"
                             >
-                                Enviar Mensagem
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
-                                    <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
-                                    <path d="m21.854 2.147-10.94 10.939"></path>
+                                Enviar via WhatsApp
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 group-hover:translate-x-1 transition-transform">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                                 </svg>
                             </button>
                         </form>
